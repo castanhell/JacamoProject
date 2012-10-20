@@ -1,0 +1,27 @@
+/*
+    Jason Project for the house building scenario used
+    in the Multi-Agent Programming Tutorial @ EASSS 2010
+
+*/
+
+MAS house_building {
+   infrastructure: Centralised
+
+   environment: c4jason.CartagoEnvironment
+
+   agents:
+   
+       giacomo  agentArchClass c4jason.CAgentArch; // the agent that wants to build a house
+       
+       companyA agentArchClass c4jason.CAgentArch; // builder agents (see their code for details)
+       companyB agentArchClass c4jason.CAgentArch;
+       companyC agentArchClass c4jason.CAgentArch #5;
+       companyD agentArchClass c4jason.CAgentArch #13;
+       companyE agentArchClass c4jason.CAgentArch;
+
+   classpath: "lib/moise.jar";   // moise: where the artifacts are included 
+              "lib/cartago.jar"; // cartago: platform for artifacts
+              "lib/c4jason.jar"; // jason-cartago integration
+
+   aslSourcePath: "src/asl"; 
+}
