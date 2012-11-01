@@ -25,6 +25,7 @@ public class AuctionArt extends Artifact {
             opCurrentValue.updateValue(bidValue);
             opCurrentWinner.updateValue(getOpUserName());
         }
+        int i=0;
     }
     
 }
