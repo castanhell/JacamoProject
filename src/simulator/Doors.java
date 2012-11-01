@@ -11,6 +11,7 @@ public class Doors implements HousePart {
         g.drawRect(350, size.height-300, 100, 100);
         g.setColor(Color.BLACK);
         g.drawString("Doors OK", 370, size.height-250);
+        //teste
     }
 
 }
